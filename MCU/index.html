@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Marvel Cinematic Universe</title>
+    <link href="izgled.css" rel="stylesheet" type="text/css"/>
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML =
+            h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Marvel Cinematic Universe</h1>
+      <img src="slike/Marvel_Logo.svg.png" alt="" style="width: 350px;"/>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="Movies.html" class="hover">Movies</a></li>
+        <li><a href="characters.html" class="hover">Characters</a></li>
+        <li><a href="About.html" class="hover">About</a></li>
+      </ul>
+    </nav>
+          <img src="slike/vector-wallpaper-20082715093520-scaled.jpg" alt="" style="max-width: 100%; height: auto;"/>
+    <main>
+    
+    </main>
+    <div>
+        <footer>
+            <p>Copyright &#169 Marvel Studios</p>
+            <body onload="startTime()">
+                <div id="txt"></div>
+        </footer>
+    </div>
+  </body>
+</html>

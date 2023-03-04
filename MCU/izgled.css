@@ -1,0 +1,116 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 19 Jan 2023, 17:31:19
+    Author     : FireSpirit
+*/
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+   
+
+}
+
+header {
+    background-color: #000000; /* Black */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #e23636; /* Red */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+main {
+    text-align: center;
+    background-color: #518cca; /* Dark Grey */
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #f78f3f; /* Orange */
+    position: relative;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   }
+
+table {
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-size: 1.2em;
+    color: white;
+}
+
+th {
+    background-color: #e23636; /* Red */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+td {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+tr {
+    background-color: #504a4a; /* Dark Grey */
+}
+
+iframe{
+    text-align: center;
+}
+.hover {
+    --s: 0.1em;   /* the thickness of the line */
+    --c: white; /* the color */
+    
+    color: white;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+  }
+  .hover:hover {
+    --_p: 100%
+  }
+  .charpg{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
